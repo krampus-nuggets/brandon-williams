@@ -1,0 +1,53 @@
+{
+  "name": "brandon-williams",
+  "private": true,
+  "description": "Portfolio Site",
+  "version": "1.0.0",
+  "author": "Brandon Williams <brandon@wemakeart.co.za>",
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "babel-plugin-styled-components": "^1.13.2",
+    "gatsby": "^3.14.2",
+    "gatsby-plugin-image": "^1.14.1",
+    "gatsby-plugin-manifest": "^3.14.0",
+    "gatsby-plugin-offline": "^4.14.0",
+    "gatsby-plugin-postcss": "^5.0.0",
+    "gatsby-plugin-react-helmet": "^4.14.0",
+    "gatsby-plugin-sharp": "^3.14.1",
+    "gatsby-plugin-styled-components": "^4.14.0",
+    "gatsby-source-filesystem": "^3.14.0",
+    "gatsby-transformer-remark": "^4.11.0",
+    "gatsby-transformer-sharp": "^3.14.0",
+    "postcss": "^8.3.11",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.1",
+    "tailwindcss": "^2.2.17"
+  },
+  "devDependencies": {
+    "prettier": "2.4.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "develop-net" : "gatsby develop -H 0.0.0.0 -p 8000",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "bugs": {
+    "url": "#"
+  }
+}
