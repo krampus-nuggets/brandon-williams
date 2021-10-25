@@ -6,8 +6,11 @@ import InnerSection from "./innerSection"
 const Hero = ({ content }) => {
     const { frontmatter } = content;
     return (
-        <section id="home-hero" className="section bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${ frontmatter.backgroundVideo })` }}>
-            
+        <section id="hero-section" className="bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${ frontmatter.backgroundVideo })` }}>
+            <InnerSection>
+                <HeroHeading headingOne={ frontmatter.heroTextOne } headingTwo={ frontmatter.heroTextTwo } headingThree={ frontmatter.heroTextThree } />
+                <HeroOverlay content={ content } />
+            </InnerSection>
         </section>
     )
 }
