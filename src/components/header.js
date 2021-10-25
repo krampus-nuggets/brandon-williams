@@ -16,11 +16,11 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className="mt-3">
-						<Link to="/" aria-label="home">
+						<Link to="https://github.com/krampus-nuggets/brandon-williams" aria-label="home">
 							<img className="float-right mr-2 h-8" src={repoIcon} alt="project-repository-icon" />
 						</Link>
 					</div>
-				</div> 
+				</div>
 			</div>
 		</section>
 	)
