@@ -1,8 +1,8 @@
 ---
-# HEADER-TEXT
-blockOne: "HI THERE"
-blockTwo: "I'M BRANDON WILLIAMS"
-blockThree: "WELCOME TO MY PORTFOLIO SITE"
+# HERO - HEADER TEXT
+heroTextOne: "HI THERE"
+heroTextTwo: "I'M BRANDON WILLIAMS"
+heroTextThree: "WELCOME TO MY PORTFOLIO SITE"
 # HEADER-RESOURCES
 backgroundVideo: "https://res.cloudinary.com/wemakeart/image/upload/v1634971551/github/brandon-williams/video/home-section-bg-gif-final_y3sdzc.gif"
 portraitOverlay: "https://res.cloudinary.com/wemakeart/image/upload/v1634967302/github/brandon-williams/images/header-portrait_fwliwl.png"
@@ -14,4 +14,12 @@ dustOverlayThree: "https://res.cloudinary.com/wemakeart/image/upload/v1635013288
 instagramIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1635005152/github/brandon-williams/icons/instagram-logo_t4963a.png"
 githubIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1635005152/github/brandon-williams/icons/github-logo_a1wljy.png"
 linkedinIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1635005152/github/brandon-williams/icons/linkedin-logo_oxpuer.png"
+# THE BRIEF - ART COLLAGE IMAGES
+briefImageOne: "https://res.cloudinary.com/wemakeart/image/upload/v1635175003/github/brandon-williams/images/01-unmasked-being_xc3b9e.gif"
+briefImageTwo: "https://res.cloudinary.com/wemakeart/image/upload/v1635175003/github/brandon-williams/images/02-unknown-being_q4nm0w.gif"
+briefImageThree: "https://res.cloudinary.com/wemakeart/image/upload/v1635175003/github/brandon-williams/images/03-masked-being_jqm07j.gif"
+# COMPANIES & PROJECTS - ART COLLAGE IMAGES
+companiesImageOne: "https://res.cloudinary.com/wemakeart/image/upload/v1635175133/github/brandon-williams/images/01-planet-holder_nav5ob.gif"
+companiesImageTwo: "https://res.cloudinary.com/wemakeart/image/upload/v1635175142/github/brandon-williams/images/02-midnight-skater_fa8wam.gif"
+companiesImageThree: "https://res.cloudinary.com/wemakeart/image/upload/v1635175136/github/brandon-williams/images/03-big-softy_e8przy.gif"
 ---
