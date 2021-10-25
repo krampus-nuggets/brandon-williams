@@ -18,15 +18,15 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
-export const pageQuery = graphql`
+export const mainQuery = graphql`
 	{
 		hero: allMarkdownRemark {
 		edges {
 			node {
 				frontmatter {
-					blockOne
-					blockTwo
-					blockThree
+						heroTextOne
+						heroTextTwo
+						heroTextThree
 					backgroundVideo
 					portraitOverlay
 					dustOverlayOne
@@ -35,11 +35,27 @@ export const pageQuery = graphql`
 					instagramIcon
 					githubIcon
 					linkedinIcon
+						briefImageOne
+						briefImageTwo
+						briefImageThree
+						companiesImageOne
+						companiesImageTwo
+						companiesImageThree
+					}
+				}
+			}
+		}
+		brief: allMarkdownRemark {
+			edges {
+				node {
+					frontmatter {
+						introLine
+						paragraphOne
+						paragraphTwo
+						endNote
 				}
 			}
 		}
 		}
 	}
 `
-
-
