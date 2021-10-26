@@ -16,9 +16,9 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className="mt-3">
-						<Link to="https://github.com/krampus-nuggets/brandon-williams" aria-label="home">
+						<a href="https://github.com/krampus-nuggets/brandon-williams" title="Site Github Repository" target="_blank" rel="noreferrer">
 							<img className="float-right mr-2 h-8" src={repoIcon} alt="project-repository-icon" />
-						</Link>
+						</a>
 					</div>
 				</div>
 			</div>
