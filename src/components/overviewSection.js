@@ -1,7 +1,6 @@
 import React from "react"
 
 import SectionHeading from "./sectionHeading"
-import ContactButton from "./contactButton"
 
 const OverviewSection = ({ content, children, heading }) => {
     let overlay = { backgroundImage: `url(${ content.dustOverlayThree })` }

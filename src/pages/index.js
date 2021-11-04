@@ -14,7 +14,6 @@ import OverviewGrid from "../components/overviewGrid"
 import OverviewInfoContainer from "../components/overviewInfoContainer"
 import OverviewInfoBlock from "../components/overviewInfoBlock"
 import OverviewSection from "../components/overviewSection"
-import ContactButton from "../components/contactButton"
 
 const keys = [
 	"dustOverlayOne",
