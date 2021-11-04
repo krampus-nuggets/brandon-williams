@@ -4,11 +4,10 @@ import HeroOverlay from "./heroOverlay"
 import InnerSection from "./innerSection"
 
 const Hero = ({ content }) => {
-    const { frontmatter } = content;
     return (
-        <section id="hero-section" className="bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${ frontmatter.backgroundVideo })` }}>
+        <section id="hero-section" className="bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${ content.backgroundVideo })` }}>
             <InnerSection>
-                <HeroHeading headingOne={ frontmatter.heroTextOne } headingTwo={ frontmatter.heroTextTwo } headingThree={ frontmatter.heroTextThree } />
+                <HeroHeading headingOne={ content.heroTextOne } headingTwo={ content.heroTextTwo } headingThree={ content.heroTextThree } />
                 <HeroOverlay content={ content } />
             </InnerSection>
         </section>
