@@ -10,8 +10,14 @@
     height: 72.5rem;
 }
 
+#overview-section {
+    height: 128rem;
+}
+
 .inner-section {
-    max-width: 1536px;
+    width: 100% !important;
+    min-width: 22.5rem !important;
+    max-width: 96rem !important;
 }
 
 .middle-gradient {
@@ -34,7 +40,7 @@
 .hero-overlay {
     position: absolute;
     bottom: 0;
-    right: -50px;
+    right: 50px;
 }
 
 .box-shadow {
@@ -58,6 +64,10 @@
 
     #hero-section {
         height: 45rem;
+    }
+
+    #overview-section {
+        height: 65rem;
     }
 }
 
