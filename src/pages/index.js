@@ -10,128 +10,168 @@ import InnerSection from "../components/innerSection"
 import ImageCollage from "../components/imageCollage"
 import ProjectGrid from "../components/projectGrid"
 import LogoGrid from "../components/logoGrid"
+import OverviewGrid from "../components/overviewGrid"
+import OverviewInfoContainer from "../components/overviewInfoContainer"
+import OverviewInfoBlock from "../components/overviewInfoBlock"
+import OverviewSection from "../components/overviewSection"
+import ContactButton from "../components/contactButton"
+
+const keys = [
+	"dustOverlayOne",
+	"dustOverlayTwo",
+	"dustOverlayThree",
+	"instagramIcon",
+	"githubIcon",
+	"linkedinIcon",
+	"introLine",
+	"paragraphOne",
+	"paragraphTwo",
+	"endNote",
+	"heroTextOne",
+	"heroTextTwo",
+	"heroTextThree",
+	"backgroundVideo",
+	"portraitOverlay",
+	"pimpMyBook",
+	"askthuto",
+	"bluegrassDigital",
+	"clover",
+	"allanGray",
+	"coronation",
+	"aiimAfrica",
+	"eurochem",
+	"costain",
+	"pimpMyBookURL",
+	"askthutoURL",
+	"bluegrassDigitalURL",
+	"cloverURL",
+	"allanGrayURL",
+	"coronationURL",
+	"aiimAfricaURL",
+	"eurochemURL",
+	"costainURL",
+	"projectsCollageImageOne",
+	"projectsCollageImageTwo",
+	"projectsCollageImageThree",
+	"briefCollageImageOne",
+	"briefCollageImageTwo",
+	"briefCollageImageThree"
+]
+
 
 const IndexPage = ({ data }) => {
-	const mainObject = data.main.edges[0].node
-	const briefObject = data.brief.edges[1].node
-	const companyLogosObject = data.companyLogos.edges[2].node
-	const companyURLsObject = data.companyURLs.edges[2].node
+	const constructObject = () => {
+		var object = {}
+		const edgeCount = (data.main.edges).length
 
-	const briefArtImages = [
-		mainObject.frontmatter.briefImageOne,
-		mainObject.frontmatter.briefImageTwo,
-		mainObject.frontmatter.briefImageThree
-	]
+		for (let i = 0; i < edgeCount; i++) {
+			let node = data.main.edges[i].node.frontmatter
 
-	const companyArtImages = [
-		mainObject.frontmatter.companiesImageOne,
-		mainObject.frontmatter.companiesImageTwo,
-		mainObject.frontmatter.companiesImageThree
-	]
+			for (let key in keys) {
+				if (node.hasOwnProperty(keys[key])){
+					if (node[keys[key]] === null) {
+						continue
+					} else {
+						object[keys[key]] = node[keys[key]]
+					}
+				}
+			}
+		}
+		return object
+	}
 
-	const companyLogos = [
-		companyLogosObject.frontmatter.clover,
-		companyLogosObject.frontmatter.allanGray,
-		companyLogosObject.frontmatter.coronation,
-		companyLogosObject.frontmatter.aiimAfrica,
-		companyLogosObject.frontmatter.eurochem,
-		companyLogosObject.frontmatter.costain,
-		companyLogosObject.frontmatter.pimpMyBook,
-		companyLogosObject.frontmatter.askthuto,
-		companyLogosObject.frontmatter.bluegrassDigital
-	]
-
-	const companyURLs = [
-		companyURLsObject.frontmatter.cloverURL,
-		companyURLsObject.frontmatter.allanGrayURL,
-		companyURLsObject.frontmatter.coronationURL,
-		companyURLsObject.frontmatter.aiimAfricaURL,
-		companyURLsObject.frontmatter.eurochemURL,
-		companyURLsObject.frontmatter.costainURL,
-		companyURLsObject.frontmatter.pimpMyBookURL,
-		companyURLsObject.frontmatter.askthutoURL,
-		companyURLsObject.frontmatter.bluegrassDigitalURL
-	]
+	const mainObject = constructObject()
 
 	return (
-		<Layout content={mainObject}>
-			<Hero content={mainObject} class="steve" />
-			<Section content={mainObject} heading="THE BRIEF" gradientType="bottom" dustOverlay="one">
-				<InnerSection>
+		<Layout content={ mainObject }>
+			<Hero content={ mainObject } />
+			<Section content={ mainObject } heading="THE BRIEF" gradientType="bottom" dustOverlay="one" sectionID="normal-section">
+				<InnerSection sectionType="flex">
 					<InfoGrid>
-						<InfoBlock heading={ false }>
-							{ briefObject.frontmatter.introLine }<span role="img" aria-label="emoji">👋🏾</span>
+						<InfoBlock>
+							{ mainObject.introLine }<span role="img" aria-label="emoji">👋🏾</span>
 							<br /> <br />
-							{ briefObject.frontmatter.paragraphOne }
+							{ mainObject.paragraphOne }
 							<br /> <br />
-							{ briefObject.frontmatter.paragraphTwo }
+							{ mainObject.paragraphTwo }
 							<br /> <br />
-							{ briefObject.frontmatter.endNote }<span role="img" aria-label="emoji">✌🏾</span>
+							{ mainObject.endNote }<span role="img" aria-label="emoji">✌🏾</span>
 						</InfoBlock>
-						<ImageCollage imageArray={ briefArtImages } />
+						<ImageCollage content={ mainObject } />
 					</InfoGrid>
 				</InnerSection>
 			</Section>
-			<Section content={mainObject} heading="COMPANIES &amp; PROJECTS" gradientType="middle" dustOverlay="two">
-				<InnerSection>
+			<Section content={ mainObject } heading="COMPANIES &amp; PROJECTS" gradientType="middle" dustOverlay="two" sectionID="normal-section">
+				<InnerSection sectionType="flex">
 					<ProjectGrid>
-						<LogoGrid imageArray={ companyLogos } companyURLArray={ companyURLs } />
-						<ImageCollage imageArray={ companyArtImages } />
+						<LogoGrid content={ mainObject } />
+						<ImageCollage content={ mainObject } imageOrientation="landscape" />
 					</ProjectGrid>
 				</InnerSection>
 			</Section>
-			<Section content={mainObject} heading="OVERVIEW" gradientType="middle" dustOverlay="three">
-				Boobs
-			</Section>
+			<OverviewSection content={ mainObject } heading="OVERVIEW" gradientType="middle" dustOverlay="three">
+				<InnerSection>
+					<OverviewGrid sectionType="flex">
+						<OverviewInfoContainer>
+							<OverviewInfoBlock headingText="SPOKEN LANGUAGES">
+								{ data.overview.edges[0].node.spokenLanguages }
+							</OverviewInfoBlock>
+							<OverviewInfoBlock headingText="MY TOOLSET">
+								{ data.overview.edges[0].node.myToolset }
+							</OverviewInfoBlock>
+						</OverviewInfoContainer>
+						<OverviewInfoContainer>
+							<OverviewInfoBlock headingText="WORKING">
+								{ data.overview.edges[0].node.workingOS }
+							</OverviewInfoBlock>
+							<OverviewInfoBlock headingText="EXPERIENCE BREAKDOWN">
+								{ data.overview.edges[0].node.experienceBreakdown }
+							</OverviewInfoBlock>
+							<OverviewInfoBlock headingText="HOBBIES &amp; OTHER STUFF">
+								{ data.overview.edges[0].node.hobbiesStuff }
+							</OverviewInfoBlock>
+						</OverviewInfoContainer>
+						<OverviewInfoContainer>
+							<OverviewInfoBlock headingText="PREVIOUS ROLES">
+								{ data.overview.edges[0].node.previousRoles }
+							</OverviewInfoBlock>
+							<OverviewInfoBlock headingText="CLOUD ENVIRONMENTS">
+								{ data.overview.edges[0].node.cloudEnvironments }
+							</OverviewInfoBlock>
+							<OverviewInfoBlock headingText="MAIN RESPONSIBILITIES">
+								{ data.overview.edges[0].node.mainResponsibilities }
+							</OverviewInfoBlock>
+						</OverviewInfoContainer>
+					</OverviewGrid>
+				</InnerSection>
+			</OverviewSection>
 		</Layout>
 	)
 }
 
 export default IndexPage
 
-export const mainQuery = graphql`
+export const mainQuery = graphql `
 	{
 		main: allMarkdownRemark {
 			edges {
 				node {
 					frontmatter {
-						heroTextOne
-						heroTextTwo
-						heroTextThree
-						backgroundVideo
-						portraitOverlay
 						dustOverlayOne
 						dustOverlayTwo
 						dustOverlayThree
 						instagramIcon
 						githubIcon
 						linkedinIcon
-						briefImageOne
-						briefImageTwo
-						briefImageThree
-						companiesImageOne
-						companiesImageTwo
-						companiesImageThree
-					}
-				}
-			}
-		}
-		brief: allMarkdownRemark {
-			edges {
-				node {
-					frontmatter {
 						introLine
 						paragraphOne
 						paragraphTwo
 						endNote
-					}
-				}
-			}
-		}
-		companyLogos: allMarkdownRemark {
-			edges {
-				node {
-					frontmatter {
+						heroTextOne
+						heroTextTwo
+						heroTextThree
+						backgroundVideo
+						portraitOverlay
 						pimpMyBook
 						askthuto
 						bluegrassDigital
@@ -141,14 +181,6 @@ export const mainQuery = graphql`
 						aiimAfrica
 						eurochem
 						costain
-					}
-				}
-			}
-		}
-		companyURLs: allMarkdownRemark {
-			edges {
-				node {
-					frontmatter {
 						pimpMyBookURL
 						askthutoURL
 						bluegrassDigitalURL
@@ -158,9 +190,29 @@ export const mainQuery = graphql`
 						aiimAfricaURL
 						eurochemURL
 						costainURL
+						projectsCollageImageOne
+						projectsCollageImageTwo
+						projectsCollageImageThree
+						briefCollageImageOne
+						briefCollageImageTwo
+						briefCollageImageThree
 					}
 				}
 			}
 		}
-	}
+		overview: allDataYaml {
+			edges {
+				node {
+					previousRoles
+					cloudEnvironments
+					mainResponsibilities
+					spokenLanguages
+					myToolset
+					workingOS
+					experienceBreakdown
+					hobbiesStuff
+				}
+			}
+		}
+  	}
 `
