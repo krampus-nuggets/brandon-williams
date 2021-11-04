@@ -19,6 +19,13 @@ module.exports = {
 			resolve: `gatsby-transformer-sharp`,
 			icon: `./src/img/wma-icon.png`
 		},
+		`gatsby-transformer-yaml`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/src/data`,
+			},
+		},
 		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-plugin-manifest`,
