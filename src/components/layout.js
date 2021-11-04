@@ -6,7 +6,7 @@ import Footer from "./footer"
 
 const Layout = ({ content, children }) => {
     return (
-        <div id="root" className="w-screen">
+        <div id="root" className="w-full">
             <GlobalStyle />
             <Header />
                 <div id="main-sections">
