@@ -1,35 +1,35 @@
 import React from "react";
 import LogoGridImage from "./logoGridImage";
 
-const LogoGrid = ({ imageArray, companyURLArray }) => {
+const LogoGrid = ({ content }) => {
     return (
         <div className="pt-10 h-full grid grid-cols-3 grid-rows-3 md:gap-y-8 lg:gap-y-0">
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[0] } companyURL={ companyURLArray[0] } />
+                <LogoGridImage imageURL={ content.clover } companyURL={ content.cloverURL } />
             </div>
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[1] } companyURL={ companyURLArray[1] } />
+                <LogoGridImage imageURL={ content.allanGray } companyURL={ content.allanGrayURL } />
             </div>
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[2] } companyURL={ companyURLArray[2] } />
+                <LogoGridImage imageURL={ content.coronation } companyURL={ content.coronationURL } />
             </div>
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[3] } companyURL={ companyURLArray[3] } />
+                <LogoGridImage imageURL={ content.aiimAfrica } companyURL={ content.aiimAfricaURL } />
             </div>
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[4] } companyURL={ companyURLArray[4] } />
+                <LogoGridImage imageURL={ content.eurochem } companyURL={ content.eurochemURL } />
             </div>
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[5] } companyURL={ companyURLArray[5] } />
+                <LogoGridImage imageURL={ content.costain } companyURL={ content.costainURL } />
             </div>
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[6] } companyURL={ companyURLArray[6] } />
+                <LogoGridImage imageURL={ content.pimpMyBook } companyURL={ content.pimpMyBookURL } />
             </div>
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[7] } companyURL={ companyURLArray[7] } />
+                <LogoGridImage imageURL={ content.askthuto } companyURL={ content.askthutoURL } />
             </div>
             <div className="w-full mx-auto">
-                <LogoGridImage imageURL={ imageArray[8] } companyURL={ companyURLArray[8] } />
+                <LogoGridImage imageURL={ content.bluegrassDigital } companyURL={ content.bluegrassDigitalURL } />
             </div>
         </div>
     )
