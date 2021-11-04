@@ -1,0 +1,51 @@
+previousRoles:
+  - "Online Division Manager @ Pimp My Book"
+  - "Fullstack Engineer @ AskThuto"
+  - "Senior QA Engineer @ Bluegrass Digital"
+  - "Dev-Ops Engineer @ Bluegrass Digital"
+
+cloudEnvironments:
+  - "Amazon Web Services"
+  - "Microsoft Azure"
+  - "Google Cloud Platform"
+
+mainResponsibilities:
+  - "Create & Maintain Automated Tests"
+  - "Manual Testing"
+  - "API Testing"
+  - "Platform Operations"
+  - "Resource Provisioning For Projects"
+  - "Fullstack Development Support"
+  - "Resource Maintenance"
+  - "QA Research For Process Improvement"
+  - "Project Documentation"
+
+spokenLanguages:
+  - "Afrikaans"
+  - "English"
+
+myToolset:
+  - "LANG. = Python, JavaScript, SQL, NoSQL, Bash, Batch, PowerShell, HTML, CSS, YAML"
+  - "PROG. = VS Code, Visual Studio, PyCharm, Insomnia, InVision, , NodeJS, Docker"
+  - "PROJ. MAN. = Slack, MS Teams, JIRA"
+  - "DESIGN = Adobe Suite, Figma"
+  - "AUTO. QA = Katalon Studio, Puppeteer, Playwright, Selenium"
+  - "DBMS = MySQL, SQL Server, MongoDB, DynamoDB"
+  - "VCS = Git & Mercurial"
+
+workingOS:
+  - "Microsoft Windows"
+  - "Linux Ubuntu"
+
+experienceBreakdown:
+  - "Freelancing - 1 year"
+  - "Online Division Manager - 3 years"
+  - "QA & DevOps - 2 years"
+
+hobbiesStuff:
+  - "Penetration Testing"
+  - "Music Production"
+  - "2D & 3D Digital Art"
+  - "Helping Open-Source Projects"
+  - "Learning New Technologies"
+  - "Data Science"
