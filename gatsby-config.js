@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Brandon WIlliams`,
+		title: `Brandon Williams`,
 		description: `A portfolio site created for documenting all there is to know.`,
 		author: `@krampus-nuggets`,
 		siteUrl: `https://github.com/krampus-nuggets`,
