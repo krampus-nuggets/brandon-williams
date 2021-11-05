@@ -1,7 +1,7 @@
 import React from "react"
 import HeroHeading from "./heroHeading"
 import HeroOverlay from "./heroOverlay"
-import InnerSection from "./innerSection"
+import InnerSection from "../globals/innerSection"
 
 const Hero = ({ content }) => {
     return (

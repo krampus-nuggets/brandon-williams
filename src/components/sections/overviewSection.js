@@ -1,6 +1,6 @@
 import React from "react"
 
-import SectionHeading from "./sectionHeading"
+import SectionHeading from "../globals/sectionHeading"
 
 const OverviewSection = ({ content, children, heading }) => {
     let overlay = { backgroundImage: `url(${ content.dustOverlayThree })` }
