@@ -6,6 +6,10 @@
     height: 40rem;
 }
 
+#missing-section {
+    height: 100vh;
+}
+
 .section {
     height: 72.5rem;
 }
