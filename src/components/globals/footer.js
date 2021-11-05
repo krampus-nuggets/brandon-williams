@@ -2,9 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Footer = ({ content }) => {
-	const { frontmatter } = content;
 	return (
-		<section className="h-14 bg-black">
+		<section className="h-14 bg-black bottom-0">
 			<div className="h-full max-w-screen-2xl mx-auto">
 				<div className="grid grid-cols-2 w-full h-full">
 					<div className="mt-4 text-right">
@@ -17,13 +16,13 @@ const Footer = ({ content }) => {
 					<div className="mt-3">
 						<div className="ml-4 grid grid-cols-3 w-32 h-full">
 							<div>
-								<img className="h-8" src={frontmatter.instagramIcon} alt="instagram-icon" />
+								<img className="h-8" src={ content.instagramIcon } alt="instagram-icon" />
 							</div>
 							<div>
-								<img className="h-8" src={frontmatter.githubIcon} alt="instagram-icon" />
+								<img className="h-8" src={ content.githubIcon } alt="instagram-icon" />
 							</div>
 							<div>
-								<img className="h-8" src={frontmatter.linkedinIcon} alt="instagram-icon" />
+								<img className="h-8" src={ content.linkedinIcon } alt="instagram-icon" />
 							</div>
 						</div>
 					</div>

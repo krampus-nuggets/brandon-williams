@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Brandon WIlliams`,
+		title: `Brandon Williams`,
 		description: `A portfolio site created for documenting all there is to know.`,
 		author: `@krampus-nuggets`,
 		siteUrl: `https://github.com/krampus-nuggets`,
@@ -18,6 +18,13 @@ module.exports = {
 		{
 			resolve: `gatsby-transformer-sharp`,
 			icon: `./src/img/wma-icon.png`
+		},
+		`gatsby-transformer-yaml`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/src/data`,
+			},
 		},
 		`gatsby-plugin-sharp`,
 		{

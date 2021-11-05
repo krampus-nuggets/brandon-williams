@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.section {
+#hero-section {
     height: 40rem;
 }
 
-@media only screen and (min-width: 768px) {
-    .section {
-        height: 64rem;
-    }
+#missing-section {
+    height: 100vh;
 }
 
-@media only screen and (min-width: 1280px) {
-    .section {
-        height: 64rem;
-    }
+.section {
+    height: 72.5rem;
 }
 
-@media only screen and (min-width: 1536px) {
-    .section {
-        height: 64rem;
-    }
+#overview-section {
+    height: 128rem;
+}
+
+.inner-section {
+    width: 100% !important;
+    max-width: 96rem !important;
 }
 
 .middle-gradient {
@@ -33,15 +32,56 @@
     mix-blend-mode: normal;
 }
 
-.dash-divider {
-    content: "";
-    background-color: #000;
+.center-block {
+    margin: 0;
     position: absolute;
-    width: 5px;
-    height: 100px;
-    top: 10px;
-    left: 50%;
-    display: block;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.box-shadow {
+    filter: drop-shadow(10px 10px 0px #000000);
+}
+
+@media only screen and (min-width: 768px) {
+    .section {
+        height: 72.5rem;
+    }
+
+    #hero-section {
+        height: 64rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .section {
+        height: 45rem;
+    }
+
+    #hero-section {
+        height: 45rem;
+    }
+
+    #overview-section {
+        height: 65rem;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .section {
+        height: 54rem;
+    }
+
+    #hero-section {
+        height: 54rem;
+    }
 }
 
 * {
