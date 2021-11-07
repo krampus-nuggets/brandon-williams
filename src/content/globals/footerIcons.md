@@ -1,6 +1,6 @@
 ---
 # FOOTER-ICONS
-instagramIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1635005152/github/brandon-williams/icons/instagram-logo_t4963a.png"
-githubIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1635005152/github/brandon-williams/icons/github-logo_a1wljy.png"
-linkedinIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1635005152/github/brandon-williams/icons/linkedin-logo_oxpuer.png"
+instagramIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1636132291/github/brandon-williams/images/footer-icons/instagram-logo_rfaqfn.webp"
+githubIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1636132292/github/brandon-williams/images/footer-icons/github-logo_awayzd.webp"
+linkedinIcon: "https://res.cloudinary.com/wemakeart/image/upload/v1636132291/github/brandon-williams/images/footer-icons/linkedin-logo_zktvqg.webp"
 ---

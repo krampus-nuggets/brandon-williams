@@ -1,6 +1,6 @@
 ---
 # THE BRIEF - ART COLLAGE IMAGES
-briefCollageImageOne: "https://res.cloudinary.com/wemakeart/image/upload/v1635175003/github/brandon-williams/images/01-unmasked-being_xc3b9e.gif"
-briefCollageImageTwo: "https://res.cloudinary.com/wemakeart/image/upload/v1635175003/github/brandon-williams/images/02-unknown-being_q4nm0w.gif"
-briefCollageImageThree: "https://res.cloudinary.com/wemakeart/image/upload/v1635175003/github/brandon-williams/images/03-masked-being_jqm07j.gif"
+briefCollageImageOne: "https://res.cloudinary.com/wemakeart/video/upload/v1636245886/github/brandon-williams/video/portrait-collage/01-unmasked-being_fwjycz.webm"
+briefCollageImageTwo: "https://res.cloudinary.com/wemakeart/video/upload/v1636245886/github/brandon-williams/video/portrait-collage/02-unknown-being_l6mwyn.webm"
+briefCollageImageThree: "https://res.cloudinary.com/wemakeart/video/upload/v1636245887/github/brandon-williams/video/portrait-collage/03-masked-being_a57dbu.webm"
 ---
