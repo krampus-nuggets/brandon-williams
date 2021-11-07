@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components"
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle `
     @font-face {
         font-family: 'Futura';
+        font-display: swap;
         src: url('https://res.cloudinary.com/wemakeart/raw/upload/v1634959203/github/brandon-williams/fonts/future-heavy-italic_my94j5.eot'); /* IE9 Compat Modes */
         src: url('https://res.cloudinary.com/wemakeart/raw/upload/v1634959203/github/brandon-williams/fonts/future-heavy-italic_my94j5.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
             url('https://res.cloudinary.com/wemakeart/raw/upload/v1634959204/github/brandon-williams/fonts/future-heavy-italic_r2zwgp.woff') format('woff'), /* Modern Browsers */
