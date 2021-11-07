@@ -38,6 +38,12 @@ module.exports = {
 				icon: `./src/img/wma-icon.png`,
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+			  	configFile: `${__dirname}/robots-txt.config.js`
+			}
+		},
 		`gatsby-plugin-styled-components`,
 		`gatsby-plugin-postcss`,
 	],
