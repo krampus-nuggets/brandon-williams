@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const repoIcon = "https://res.cloudinary.com/wemakeart/image/upload/v1634962933/github/brandon-williams/icons/project-icon_cyxzcl.png"
+const repoIcon = "https://res.cloudinary.com/wemakeart/image/upload/v1636133849/github/brandon-williams/images/project-icon_ybodx0.webp"
 
 const Header = () => {
 	return (
