@@ -6,8 +6,8 @@ import InnerSection from "../components/globals/innerSection"
 import HeroHeading from "../components/hero/heroHeading"
 
 const NotFoundPage = ({ data }) => {
-	const footerObject = data.main.edges[3].node.frontmatter
-	const bgVideo = data.main.edges[6].node.frontmatter.backgroundVideo
+	const footerObject = data.main.edges[2].node.frontmatter
+	const bgVideo = data.main.edges[4].node.frontmatter.backgroundVideo
 
 	return (
 		<Layout content={ footerObject }>
