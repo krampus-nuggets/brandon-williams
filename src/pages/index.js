@@ -2,7 +2,6 @@ import * as React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/globals/layout"
-import Seo from "../components/globals/seo"
 import Hero from "../components/hero/hero"
 import Section from "../components/globals/section"
 import InfoBlock from "../components/sections/infoBlock"
@@ -84,7 +83,6 @@ const IndexPage = ({ data }) => {
 
 	return (
 		<Layout content={ mainObject }>
-			<Seo />
 			<Hero content={ mainObject } />
 			<Section content={ mainObject } heading="THE BRIEF" gradientType="bottom" dustOverlay="one" sectionID="normal-section">
 				<InnerSection sectionType="flex">
