@@ -6,8 +6,8 @@ import InnerSection from "../components/globals/innerSection"
 import HeroHeading from "../components/hero/heroHeading"
 
 const NotFoundPage = ({ data }) => {
-	const footerObject = data.main.edges[2].node.frontmatter
-	const bgVideo = data.main.edges[4].node.frontmatter.backgroundVideo
+	const footerObject = data.main.edges[4].node.frontmatter
+	const bgVideo = data.main.edges[5].node.frontmatter.backgroundVideo
 
 	return (
 		<Layout content={ footerObject }>
@@ -23,7 +23,7 @@ const NotFoundPage = ({ data }) => {
 
 export default NotFoundPage
 
-export const missingQuery = graphql `
+export const pageQuery = graphql `
 	{
 		main: allMarkdownRemark {
 			edges {

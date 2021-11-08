@@ -7,13 +7,15 @@ import Section from "../components/globals/section"
 import InfoBlock from "../components/sections/infoBlock"
 import InfoGrid from "../components/sections/infoGrid"
 import InnerSection from "../components/globals/innerSection"
-import ImageCollage from "../components/sections/imageCollage"
 import ProjectGrid from "../components/sections/projectGrid"
 import LogoGrid from "../components/sections/logoGrid"
 import OverviewGrid from "../components/sections/overviewGrid"
 import OverviewInfoContainer from "../components/sections/overviewInfoContainer"
 import OverviewInfoBlock from "../components/sections/overviewInfoBlock"
 import OverviewSection from "../components/sections/overviewSection"
+import VideoCollage from "../components/sections/videoCollage"
+import TriggerVideo from "../components/globals/triggerVideo"
+import ContactBubble from "../components/globals/contactBubble"
 
 const keys = [
 	"dustOverlayOne",
@@ -80,6 +82,7 @@ const IndexPage = ({ data }) => {
 	}
 
 	const mainObject = constructObject()
+	const yamlObject = data.overview.edges[0].node
 
 	return (
 		<Layout content={ mainObject }>
@@ -96,7 +99,7 @@ const IndexPage = ({ data }) => {
 							<br /> <br />
 							{ mainObject.endNote }<span role="img" aria-label="emoji">✌🏾</span>
 						</InfoBlock>
-						<ImageCollage content={ mainObject } />
+						<VideoCollage source={ yamlObject.videoCollage[0] } size="350px" />
 					</InfoGrid>
 				</InnerSection>
 			</Section>
@@ -104,7 +107,7 @@ const IndexPage = ({ data }) => {
 				<InnerSection sectionType="flex">
 					<ProjectGrid>
 						<LogoGrid content={ mainObject } />
-						<ImageCollage content={ mainObject } imageOrientation="landscape" />
+						<VideoCollage source={ yamlObject.videoCollage[1] } size="350px" />
 					</ProjectGrid>
 				</InnerSection>
 			</Section>
@@ -113,37 +116,39 @@ const IndexPage = ({ data }) => {
 					<OverviewGrid sectionType="flex">
 						<OverviewInfoContainer>
 							<OverviewInfoBlock headingText="SPOKEN LANGUAGES">
-								{ data.overview.edges[0].node.spokenLanguages }
+								{ yamlObject.spokenLanguages }
 							</OverviewInfoBlock>
 							<OverviewInfoBlock headingText="MY TOOLSET">
-								{ data.overview.edges[0].node.myToolset }
+								{ yamlObject.myToolset }
 							</OverviewInfoBlock>
 						</OverviewInfoContainer>
 						<OverviewInfoContainer>
 							<OverviewInfoBlock headingText="WORKING">
-								{ data.overview.edges[0].node.workingOS }
+								{ yamlObject.workingOS }
 							</OverviewInfoBlock>
 							<OverviewInfoBlock headingText="EXPERIENCE BREAKDOWN">
-								{ data.overview.edges[0].node.experienceBreakdown }
+								{ yamlObject.experienceBreakdown }
 							</OverviewInfoBlock>
 							<OverviewInfoBlock headingText="HOBBIES &amp; OTHER STUFF">
-								{ data.overview.edges[0].node.hobbiesStuff }
+								{ yamlObject.hobbiesStuff }
 							</OverviewInfoBlock>
 						</OverviewInfoContainer>
 						<OverviewInfoContainer>
 							<OverviewInfoBlock headingText="PREVIOUS ROLES">
-								{ data.overview.edges[0].node.previousRoles }
+								{ yamlObject.previousRoles }
 							</OverviewInfoBlock>
 							<OverviewInfoBlock headingText="CLOUD ENVIRONMENTS">
-								{ data.overview.edges[0].node.cloudEnvironments }
+								{ yamlObject.cloudEnvironments }
 							</OverviewInfoBlock>
 							<OverviewInfoBlock headingText="MAIN RESPONSIBILITIES">
-								{ data.overview.edges[0].node.mainResponsibilities }
+								{ yamlObject.mainResponsibilities }
 							</OverviewInfoBlock>
 						</OverviewInfoContainer>
 					</OverviewGrid>
 				</InnerSection>
 			</OverviewSection>
+			<TriggerVideo />
+			<ContactBubble />
 		</Layout>
 	)
 }
@@ -210,6 +215,7 @@ export const mainQuery = graphql `
 					workingOS
 					experienceBreakdown
 					hobbiesStuff
+					videoCollage
 				}
 			}
 		}

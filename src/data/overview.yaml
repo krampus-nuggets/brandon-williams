@@ -1,3 +1,4 @@
+# OVERVIEW SECTION - CONTENT
 previousRoles:
   - "Online Division Manager @ Pimp My Book"
   - "Fullstack Engineer @ AskThuto"
@@ -49,3 +50,8 @@ hobbiesStuff:
   - "Helping Open-Source Projects"
   - "Learning New Technologies"
   - "Data Science"
+
+# VIDEO COLLAGE - CONTENT
+videoCollage:
+  - "https://res.cloudinary.com/wemakeart/video/upload/v1636368869/github/brandon-williams/video/video-collage/the-brief-collage_m24bgc.webm"
+  - "https://res.cloudinary.com/wemakeart/video/upload/v1636368884/github/brandon-williams/video/video-collage/overview-collage_janqox.webm"
