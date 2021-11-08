@@ -6,7 +6,7 @@
   "author": "Brandon Williams <brandon@wemakeart.co.za>",
   "dependencies": {
     "autoprefixer": "^10.3.7",
-    "babel-plugin-styled-components": "^1.13.2",
+    "babel-plugin-styled-components": "^1.13.3",
     "gatsby": "^3.14.2",
     "gatsby-plugin-image": "^1.14.1",
     "gatsby-plugin-manifest": "^3.14.0",
