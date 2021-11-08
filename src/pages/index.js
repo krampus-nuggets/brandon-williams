@@ -15,6 +15,7 @@ import OverviewInfoBlock from "../components/sections/overviewInfoBlock"
 import OverviewSection from "../components/sections/overviewSection"
 import VideoCollage from "../components/sections/videoCollage"
 import TriggerVideo from "../components/globals/triggerVideo"
+import ContactBubble from "../components/globals/contactBubble"
 
 const keys = [
 	"dustOverlayOne",
@@ -147,6 +148,7 @@ const IndexPage = ({ data }) => {
 				</InnerSection>
 			</OverviewSection>
 			<TriggerVideo />
+			<ContactBubble />
 		</Layout>
 	)
 }
