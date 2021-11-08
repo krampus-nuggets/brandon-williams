@@ -3,7 +3,7 @@ import LogoGridImage from "./logoGridImage";
 
 const LogoGrid = ({ content }) => {
     return (
-        <div className="pt-10 h-full grid grid-cols-3 grid-rows-3 md:gap-y-8 lg:gap-y-0">
+        <div className="pt-10 h-full grid grid-cols-3 grid-rows-3 md:gap-y-8">
             <div className="w-full mx-auto">
                 <LogoGridImage imageURL={ content.clover } companyURL={ content.cloverURL } />
             </div>
