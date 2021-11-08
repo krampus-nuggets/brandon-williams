@@ -22,12 +22,12 @@ const Footer = ({ content }) => {
 							</div>
 							<div>
 								<a href="https://github.com/krampus-nuggets" target="_blank" rel="noreferrer">
-									<img className="h-8" src={ content.githubIcon } alt="instagram-icon" />
+									<img className="h-8" src={ content.githubIcon } alt="github-icon" />
 								</a>
 							</div>
 							<div>
 								<a href="https://www.linkedin.com/in/brandon-williams-krampus-nuggets/" target="_blank" rel="noreferrer">
-									<img className="h-8" src={ content.linkedinIcon } alt="instagram-icon" />
+									<img className="h-8" src={ content.linkedinIcon } alt="linkedin-icon" />
 								</a>
 							</div>
 						</div>
