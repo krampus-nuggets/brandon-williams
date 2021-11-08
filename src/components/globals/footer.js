@@ -16,13 +16,19 @@ const Footer = ({ content }) => {
 					<div className="mt-3">
 						<div className="ml-4 grid grid-cols-3 w-32 h-full">
 							<div>
-								<img className="h-8" src={ content.instagramIcon } alt="instagram-icon" />
+								<a href="https://www.instagram.com/brandon_wma/?hl=en" target="_blank">
+									<img className="h-8" src={ content.instagramIcon } alt="instagram-icon" />
+								</a>
 							</div>
 							<div>
-								<img className="h-8" src={ content.githubIcon } alt="instagram-icon" />
+								<a href="https://github.com/krampus-nuggets" target="_blank">
+									<img className="h-8" src={ content.githubIcon } alt="instagram-icon" />
+								</a>
 							</div>
 							<div>
-								<img className="h-8" src={ content.linkedinIcon } alt="instagram-icon" />
+								<a href="https://www.linkedin.com/in/brandon-williams-krampus-nuggets/" target="_blank">
+									<img className="h-8" src={ content.linkedinIcon } alt="instagram-icon" />
+								</a>
 							</div>
 						</div>
 					</div>
