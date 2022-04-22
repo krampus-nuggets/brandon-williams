@@ -26,17 +26,18 @@ spokenLanguages:
   - "English"
 
 myToolset:
-  - "LANG. = Python, JavaScript, SQL, NoSQL, Bash, Batch, PowerShell, HTML, CSS, YAML"
+  - "LANG. = Python, JavaScript, TypeScript, SQL, Bash, Batch, PowerShell, HTML, CSS, YAML"
   - "PROG. = VS Code, Visual Studio, PyCharm, Insomnia, InVision, , NodeJS, Docker"
-  - "PROJ. MAN. = Slack, MS Teams, JIRA"
-  - "DESIGN = Adobe Suite, Figma"
-  - "AUTO. QA = Katalon Studio, Puppeteer, Playwright, Selenium"
+  - "PROJ. MAN. = Slack, MS Teams & JIRA"
+  - "DESIGN = Adobe XD & Figma"
+  - "AUTO. QA = Katalon Studio, Puppeteer, Playwright, Cypress, Selenium"
   - "DBMS = MySQL, SQL Server, MongoDB, DynamoDB"
   - "VCS = Git & Mercurial"
 
 workingOS:
   - "Microsoft Windows"
   - "Linux Ubuntu"
+  - "Apple macOS"
 
 experienceBreakdown:
   - "Freelancing - 1 year"
