@@ -16,7 +16,7 @@ const Footer = ({ content }) => {
 					<div className="mt-3">
 						<div className="ml-4 grid grid-cols-3 w-32 h-full">
 							<div>
-								<a href="https://www.instagram.com/brandon_wma/?hl=en" target="_blank" rel="noreferrer">
+								<a href="https://www.instagram.com/brandon_wma" target="_blank" rel="noreferrer">
 									<img className="h-8" src={ content.instagramIcon } alt="instagram-icon" />
 								</a>
 							</div>
@@ -26,7 +26,7 @@ const Footer = ({ content }) => {
 								</a>
 							</div>
 							<div>
-								<a href="https://www.linkedin.com/in/brandon-williams-krampus-nuggets/" target="_blank" rel="noreferrer">
+								<a href="https://www.linkedin.com/in/brandon-williams-wma" target="_blank" rel="noreferrer">
 									<img className="h-8" src={ content.linkedinIcon } alt="linkedin-icon" />
 								</a>
 							</div>
