@@ -6,7 +6,7 @@ module.exports = {
 			'./src/**/*.js',
 		],
 	},
-	darkMode: false, // or 'media' or 'class'
+	darkMode: false,
 	theme: {},
 	variants: {
 		extend: {},
